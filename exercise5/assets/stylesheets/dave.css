@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  margin: 0;
+  mix-blend-mode: difference;
+  position: fixed;
+  text-decoration: none;
+  padding-left: 15px;
+  z-index: 6;
+}
+
+a:hover {
+  color:blue;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(white 25%,yellow);
+}
+
+img {
+   max-width: 100%;
+   display: block;
+   padding-bottom: 50px;
+   filter:grayscale(100%);
+ }
+
+img:hover {
+  filter: none;
+}
+
+.sanfrancisco {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
+}
+
+ .davesmall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
+  }
+
+@media screen and (max-width: 693px) {
+  img {
+    padding: 0;
+    filter: none;
+  }
+}

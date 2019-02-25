@@ -1,0 +1,87 @@
+
+body {
+  display: contents;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  background: linear-gradient(white 60%, #0ca2db, darkblue);
+}
+
+.back {
+  position: absolute;
+  top: 600px;
+  left: 47px;
+
+}
+
+h1 {
+    position: relative;
+    color: darkblue;
+    border: 10px solid;
+    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: .75em;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+    top: 7px;
+    left: 20px;
+    z-index: 5;
+}
+
+h1:hover {
+  /* color: red; */
+}
+
+.links {
+    position: relative;
+    border: 10px solid;
+    border-top: none;
+    height: 450px;
+    width: 320px;
+    padding-top: 90px;
+    padding-left: 18px;
+    line-height: 2em;
+    text-align: left;
+    background: white;
+    top: 0px;
+    left: 20px;
+    /* -o-transition:1s;
+    -ms-transition:1s;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  background: yellow;
+}
+
+img {
+    position: relative;
+    border: 10px solid white;
+    height: 98vh;
+    width: 100;
+    top: -656px;
+    left: 670px;
+    z-index: 6;
+    /* -o-transition:1s;
+    -ms-transition:1s;
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    transition:1s; */
+}
+
+img:hover {
+  filter: invert(100%);
+}
