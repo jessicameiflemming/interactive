@@ -1,0 +1,88 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  background: white;
+}
+
+img {
+
+  height: 55%;
+  width: 55%;
+
+}
+
+#square {
+  mix-blend-mode: color-burn;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 7;
+  opacity:2;
+  animation: flickerAnimation 10s infinite;
+}
+
+.center {
+  display:inline-block;
+  text-align: center;
+}
+
+.windowblue {
+  top: -10px;
+  display: inline-block;
+  position: absolute;
+  mix-blend-mode: multiply;
+  z-index: 3
+}
+
+.windowred {
+  top: -10px;
+
+  display:inline-block;
+  mix-blend-mode: multiply;
+  position: absolute;
+  z-index: 2;
+  -webkit-animation: mover 10s infinite  alternate ease-in;
+    animation: mover 10s infinite  alternate ease-in;
+}
+
+.windowwhite {
+  top: -10px;
+
+  display:inline-block;
+  position: absolute;
+  z-index: 1;
+}
+
+.windowblack {
+  top: -10px;
+
+  display: inline-block;
+  position: absolute;
+  z-index: 4;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+@keyframes flickerAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
